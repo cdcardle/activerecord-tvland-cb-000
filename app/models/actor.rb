@@ -7,6 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    roles.tap{characters.each {|c| puts "#{c.name} - #{c.show}"}}
+    roles.tap(characters.each {|c| puts "#{c.name} - #{c.show}"})
   end
 end
