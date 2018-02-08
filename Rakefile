@@ -21,6 +21,6 @@ namespace :db do
   end
 end
 
-namespace :console do
+namespace :console => :environment do
   pry.start
 end
