@@ -7,6 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    characters.join(", ")
+    characters.each do |c|
+      puts "#{c.name} - #{c.show}" 
   end
 end
